@@ -1,95 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-*,
-::before,
-::after{
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(212, 45%, 89%);
 }
 
-:root{
-  /* colors */
-  --white: hsl(0, 0%, 100%);
-  --light-gray: hsl(212, 45%, 89%);
-  --grayish-blue: hsl(220, 15%, 55%);
-  --dark-blue: hsl(218, 44%, 22%);
-
-     /* font */
-   --font-fam-outfit: "Outfit", sans-serif;
-   --font-fam-spacemono: "Space Mono", monospace;
-   --font-size-10: 62.5%; /* 10px */
-   --font-weight-400: 400;
-   --font-weight-500: 500;
-   --font-weight-700: 700;
-}
-
-html {
-   font-size: var(--font-size-10);
-   font-weight: var(--font-weight-400);
-   font-family: var(--font-fam-outfit);
-   color: var(--grayish-blue);
-   scroll-behavior: smooth;
-   background: var(--light-gray);
-}
-
-body {
-  font-size: 1,5rem;
-  color: var(--dark-blue);
-  font-weight: var(--font-weight-400);
-}
-
-.container{
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
-  gap: 0.5rem;
-
-  min-width: 32rem;
-  min-height: 100vh;
 }
 
-.mainContent{
-  min-width: 32rem;
+.card {
+  margin: 7rem;
+  width: 14%;
+ 
+  
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
 }
 
-.card{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  background: var(--white);
-  padding: 1,5rem;
-  border-radius: 2rem;
-}
-
-.imageContainer{
+.main-img {
   width: 100%;
+  height: auto;
+  border-radius: 1rem;
 }
 
-.qrImg{
-  width:100%;
-  border-radius: 1,5rem;
+.header {
+  text-align: center;
+  font-size: 1.3rem;
 }
 
-.detailsContainer {
-   display: flex;
-   flex-direction: column;
-   gap: 1.5rem;
-   text-align: center;
+.article {
+  text-align: center;
+  font-size: 1rem;
+  color: hsl(220, 15%, 55%);
 }
 
-.title {
-   font-size: 2.2rem;
-   font-weight: var(--font-weight-700);
+@media screen and (max-width: 900px) {
+  .card {
+    margin: 5rem;
+    width: 50%;
+  }
 }
 
-.description {
-   color: var(--grayish-blue);
-   padding: 0 1.5rem;
-   margin-bottom: 3rem;
+@media screen and (max-width: 550px) {
+  .card {
+    margin: 3rem;
+    width: 80%;
+  }
 }
-
-a {
-   text-decoration: none;
-}
+  
