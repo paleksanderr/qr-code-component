@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="this is a solution qr code component challenge from frontend mentor "
+    />
+    <meta name="keyword" content="html,css,flexbox" />
+    <meta name="author" content="Pawel" />
 
     <link
       rel="icon"
@@ -11,7 +16,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
     <title>Frontend Mentor | QR code component</title>
 
@@ -27,20 +32,27 @@
     </style>
   </head>
   <body>
-    <main class="main">
-      <div class="card">
-        <img class="main-img" src="./images/image-qr-code.png" alt="" />
+    <div class="container">
+      <main class="mainContent">
+        <div class="card">
+          <div class="imageContainer">
+            <a href="#">
+              <img src="./images/image-qr-code.png" alt="grImg" class="qrImg" />
+            </a>
+          </div>
 
-        <h1 class="header">
-          Improve your front-end skills by building projects
-        </h1>
-        <p class="article">
-          Scan the QR code to visit Frontend Mentor and take your coding skills to
-          the next level
-        </p>
-      </div>
-    </main>
+          <div class="detailsContainer">
+            <div class="title">
+              Improve your front-end skills by building projects
+            </div>
 
-    
+            <div class="discription">
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

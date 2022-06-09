@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+
+     /* font */
+   --font-fam-outfit: "Outfit", sans-serif;
+   --font-fam-spacemono: "Space Mono", monospace;
+   --font-size-10: 62.5%; /* 10px */
+   --font-weight-400: 400;
+   --font-weight-500: 500;
+   --font-weight-700: 700;
+}
+
+html {
+   font-size: var(--font-size-10);
+   font-weight: var(--font-weight-400);
+   font-family: var(--font-fam-outfit);
+   color: var(--grayish-blue);
+   scroll-behavior: smooth;
+   background: var(--light-gray);
+}
+
+body {
+  font-size: 1,5rem;
+  color: var(--dark-blue);
+  font-weight: var(--font-weight-400);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  min-width: 32rem;
+  min-height: 100vh;
+}
+
+.mainContent{
+  min-width: 32rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--white);
+  padding: 1,5rem;
+  border-radius: 2rem;
+}
+
+.imageContainer{
+  width: 100%;
+}
+
+.qrImg{
+  width:100%;
+  border-radius: 1,5rem;
+}
+
+.detailsContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   text-align: center;
+}
+
+.title {
+   font-size: 2.2rem;
+   font-weight: var(--font-weight-700);
+}
+
+.description {
+   color: var(--grayish-blue);
+   padding: 0 1.5rem;
+   margin-bottom: 3rem;
+}
+
+a {
+   text-decoration: none;
+}
